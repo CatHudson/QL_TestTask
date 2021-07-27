@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QL_TestTask", "QL_TestTask\QL_TestTask.csproj", "{6A3FC661-A25F-42A6-91FE-3749C2AC508D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A3FC661-A25F-42A6-91FE-3749C2AC508D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A3FC661-A25F-42A6-91FE-3749C2AC508D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A3FC661-A25F-42A6-91FE-3749C2AC508D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A3FC661-A25F-42A6-91FE-3749C2AC508D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4728D33A-E1A2-4DD6-BE1F-E7B78710D881}
+	EndGlobalSection
+EndGlobal
