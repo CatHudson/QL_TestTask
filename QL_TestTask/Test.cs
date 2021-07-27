@@ -24,7 +24,7 @@ namespace QL_TestTask
         public void SendLetter_Test(string login, string domain, string password, string addressee, string letterTheme, string letterBody)
         {
             if (string.IsNullOrWhiteSpace(login) || string.IsNullOrWhiteSpace(password))
-                throw new ArgumentException("Не задан логин либо пароль");
+                throw new ArgumentException("РќРµ Р·Р°РґР°РЅ Р»РѕРіРёРЅ Р»РёР±Рѕ РїР°СЂРѕР»СЊ");
             var driver = initDriver();
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(3));
             driver.Navigate().GoToUrl(mainPageUrl);
@@ -42,7 +42,7 @@ namespace QL_TestTask
             }
             catch (Exception ex) when (ex is WebDriverTimeoutException || ex is NoSuchElementException)
             {
-                throw new ArgumentException("Были введены невалидные данные для входа");
+                throw new ArgumentException("Р‘С‹Р»Рё РІРІРµРґРµРЅС‹ РЅРµРІР°Р»РёРґРЅС‹Рµ РґР°РЅРЅС‹Рµ РґР»СЏ РІС…РѕРґР°");
             };
             mailPage.writeLetterButton.Click();
             LetterPopUpPage popUp = new LetterPopUpPage(driver);
@@ -60,7 +60,7 @@ namespace QL_TestTask
             }
             catch (WebDriverTimeoutException) 
             {
-                throw new ArgumentException("Были введены некорректные данные для отправки письма");
+                throw new ArgumentException("Р‘С‹Р»Рё РІРІРµРґРµРЅС‹ РЅРµРєРѕСЂСЂРµРєС‚РЅС‹Рµ РґР°РЅРЅС‹Рµ РґР»СЏ РѕС‚РїСЂР°РІРєРё РїРёСЃСЊРјР°");
             };
             Assert.True(popUp.letterSentLabel.Displayed);
             driver.Quit();
@@ -86,7 +86,7 @@ namespace QL_TestTask
                     new DriverManager().SetUpDriver(new InternetExplorerConfig());
                     return new InternetExplorerDriver();
                 default:
-                    throw new ArgumentException("Неизвестный или неподдерживаемый браузер");
+                    throw new ArgumentException("РќРµРёР·РІРµСЃС‚РЅС‹Р№ РёР»Рё РЅРµРїРѕРґРґРµСЂР¶РёРІР°РµРјС‹Р№ Р±СЂР°СѓР·РµСЂ");
             }
         }
     }
